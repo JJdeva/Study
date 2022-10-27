@@ -1,0 +1,13 @@
+create schema if not exists scott AUTHORIZATION CURRENT_USER;
+
+CREATE TABLE if not exists scott.DEPT
+(
+    DEPTNO numeric(2) not null CONSTRAINT PK_DEPT PRIMARY KEY,
+    DNAME VARCHAR(14) ,
+    LOC VARCHAR(13) 
+);
+INSERT INTO scott.DEPT VALUES 
+    (10,'ACCOUNTING','NEW YORK'),
+    (20,'RESEARCH','DALLAS'),
+    (30,'SALES','CHICAGO'),
+    (40,'OPERATIONS','BOSTON');

@@ -1,0 +1,1 @@
+CREATE DATABASE community_board;
