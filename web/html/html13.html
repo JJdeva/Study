@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My page</title>
+
+</head>
+<body>
+    <form action="subject.php" method="post">
+        <label for="interest">관심항목</label>
+        <input type="text" id="interest" list="english">
+        <datalist id="english">
+            <option value="grammar" label="문법"></option>
+            <option value="voca" label="어휘"></option>
+            <option value="speaking" label="회화"></option>
+            <option value="listening" label="청취"></option>
+            <option value="reading" label="독해"></option>
+        </datalist>
+        <button type="submit">선택완료</button>
+    </form>
+</body>
+</html>
