@@ -32,7 +32,7 @@ RDBMS에서 데이터베이스와 소통하기 위해 SQL을 사용한다.
 
 
 
-## SQL 유형
+## SQL의 분류
 
 RDBMS의 기능은 크게 데이터 정의, 조작, 제어 기능이다. 이러한 기능은 SQL을 통해 구현된다.
 
@@ -45,7 +45,8 @@ RDBMS의 기능은 크게 데이터 정의, 조작, 제어 기능이다. 이러�
 - 데이터 조작어 (DML, Data Manipulation Language)
     - 테이블 내의 데이터를 갱신, 삭제, 추가, 저장 등 데이터를 조작하는 SQL
     - SELECT, INSERT, DELETE, UPDATE 등
+    - 트랜잭션이 발생하는 SQL도 DML이다.
 - 데이터 제어어 (DCL, Data Control Language)
     - 데이터베이스 접근, 권한 부여하는 SQL
     - 데이터베이스의 데이터를 안전하게 보호하기 위해서다.
-    - GRANT, REVOKE
+    - GRANT, REVOKE, DENY 등

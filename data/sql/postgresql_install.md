@@ -67,6 +67,3 @@ Type "help" for help.
 
 postgres=#
 ```
-
-
-

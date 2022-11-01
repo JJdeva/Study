@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <!-- 선택자 우선순위 -->
+    <style>
+        #habor {
+            color: red;
+        }
+        .heading {
+            color: green;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 우선순위 -->
+    <h1>세계 3대 미항</h1>
+    <!-- 인라인이 최우선 -->
+    <p class="heading" id="habor" style="color:brown;">시드니</p>
+    <!-- 그다음은 id -->
+    <p class="heading" id="habor">라우데자네이루</p>
+    <!-- 그다음은 class -->
+    <p class="heading">나폴리</p>
+</body>
+</html>
