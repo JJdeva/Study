@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <script src="{% static 'blog/bootstrap/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>{% block head_title %}Blog{% endblock %}</title>
+</head>
+<body>
+    <style>
+        a {
+            text-decoration-line: none;
+        }
+    </style>
+    {% include 'blog/navbar.html' %}
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-8 col-lg-9" id="main-area">
+                {% block main_area %}
+                {% endblock %}
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search">
+                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <ul>
+                            {% for category in categories %}
+                            <li>
+                                <a href="{{ category.get_absolute_url }}">{{ category }} ({{category.post_set.count}})</a>
+                            </li>
+                            {% endfor %}
+                            <li>
+                                <a href="/blog/category/no_category/">미분류 ({{ no_category_post_count }})</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+    {% include 'blog/footer.html' %}
+</body>
+</html>

@@ -6,6 +6,7 @@
 - [Web](web/README.md)
     - [HTML](web/html/html1.md)
     - [CSS](web/css/CSS.md)
+- [django](web/django/README.md)
 
 ## 데이터
 
@@ -29,6 +30,9 @@
 ## 인프라기술
 
 - [Git](infra/git/README.md)
+    - [git이란](infra/git/git1.md)
+    - [로컬저장소](infra/git/git2.md)
+
 - [Linux](infra/linux/README.md)
 - [Docker](infra/docker/README.md)
 - [Kubernetes](infra/kubernetes/README.md)
