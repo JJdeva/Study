@@ -3,6 +3,8 @@
 ## 프로그래밍
 
 - [Python](pl/python/README.md)
+    - [데이터](pl/python/data_python.md)
+
 - [Web](web/README.md)
     - [HTML](web/html/html1.md)
     - [CSS](web/css/CSS.md)
