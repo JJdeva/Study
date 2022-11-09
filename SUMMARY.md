@@ -12,7 +12,11 @@
 
 ## 데이터
 
-- [빅데이터](data/bigdata/README.md)
+- [용어정리](data/terms/terms.md)
+- [Numpy/Pandas](data/pdnp/README.md)
+    - [numpy](data/pdnp/numpy01.md)
+    - [pandas](data/pdnp/pandas01.md)
+
 - [SQL](data/sql/README.md)
     - [SQL이란](data/sql/00_SQL이란.md)
     - [식별자 규칙](data/sql/convention.md)
@@ -49,6 +53,13 @@
 - [자료구조](CS/structure/README.md)
 - [알고리즘](CS/algorithm/README.md)
 
+## 문제풀이
+
+- [SQL](ps/sql/README.md)
+    - [프로그래머스]()
+        - [헤비 유저가 소유한 장소](ps/sql/programmers/77487.md)
+        - [즐겨찾기가 가장 많은 식당 정보출력하기](ps/sql/programmers/131123.md)
+
 ## 설정
 
 - [PostgreSQL 설치](data/sql/postgresql_install.md)
@@ -62,3 +73,6 @@
 - [기업정보](jobs/corpinfo.md)
 - [인터뷰](jobs/interview.md)
 - [직무관련질문](jobs/questions.md)
+
+
+

@@ -29,6 +29,70 @@ dmg파일을 받고 기본으로 설치
 
 
 
+## Homebrew
+
+```bash
+brew install postgresql@13
+```
+
+버전확인
+
+```bash
+sudo /opt/homebrew/Cellar/postgresql@13/13.8_4/bin/postgres --version
+```
+
+서비스 시작
+
+```bash
+brew services start postgresql@13
+```
+
+접속
+
+```
+psql postgres
+```
+
+데이터베이스 생성
+
+```postgresql
+CREATE DATABASE practice;
+CREATE DATABASE practice ENCODING 'utf-8';
+```
+
+계정생성 및 role설정
+
+```postgresql
+CREATE ROLE admin WITH LOGIN PASSWORD 'qwer1234';
+
+-- or
+
+create user myuser password 'qwer1234';
+alter database practice owner to myuser;
+grant all on database practice to myuser with grant option;
+
+--접속
+psql -U myuser -d practice
+```
+
+role확인
+
+```postgresql
+SELECT rolname FROM pg_roles;
+```
+
+
+
+pgadmin4 설치
+
+```
+brew install pgadmin4 --cask
+```
+
+
+
+
+
 ## 환경변수 설정
 
 ```bash
